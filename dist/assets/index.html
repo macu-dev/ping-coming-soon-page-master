@@ -7,28 +7,52 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Ping coming soon page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+  <div class="container">
+    <header class="header_ping">
+      <nav class="navbar_ping">
+        <div class="navbar_brand_ping">
+          <img src="/dev/assets/images/logo.svg" alt="logo">
+        </div>
+      </nav>
 
-  We are launching soon!
+      <div class="box_title">
+        <h1 class="title_ping">We are launching <span>soon!</span></h1>
+        <h2 class="subtile_ping">Subscribe and get notified</h2>
+      </div>
 
-  Subscribe and get notified
+      <form action="/action_page.php">
+        <input type="text" id="fname" name="fname" value="John">
+        <input type="submit" value=" Notify Me">
+      </form> 
 
-  Notify Me
+      <div class="box_img">
+        <img src="/dev/assets/images/illustration-dashboard.png" alt="dashboard">
+      </div>
+      <div class="container-icons">
+        <div class="box-icons-social">
+          <a href="">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+      <p>&copy; Copyright Ping. All rights reserved.</p>
+    </header>
 
-  &copy; Copyright Ping. All rights reserved.
+    <footer>
+      <p class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Your Name Here</a>.
+      </p>
+    </footer>
+  </div>
 
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
 </body>
 </html>
