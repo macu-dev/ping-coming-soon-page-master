@@ -1,0 +1,89 @@
+@include mq ($medium){
+  .container {
+    grid-template-rows: repeat(6,auto);
+    grid-template-areas:"navigation navigation navigation"
+                        "contenido1 contenido1 contenido1"
+                        "contenido2 contenido2 contenido2"
+                        "button     button     button    "
+                        "icon-social icon-social icon-social" 
+                        "footer      footer      footer     " ;
+
+    padding-left: 8%;
+    padding-top: 7%;
+    padding-right: 8%;
+  }
+
+  .header-huddle{
+    @include bg (url('/images/bg-mobile.svg'), contain , top center);
+  }
+
+  .navbar-huddle{
+    margin-bottom: 3rem;
+  }
+
+  .navbar-brand-huddle{
+    img{
+      width: 150px;
+    }
+  }
+
+  .container-content-text{
+    padding: 0 !important;
+    .text-title{
+      h1{
+        text-align: center;
+        font-size: 1.66rem;
+      }
+    
+    }
+
+    .parraf{
+      text-align: center;
+      padding: 0 2% 0 3%;
+    }
+
+  }
+
+
+  .btn-box{
+    display: flex;
+    justify-content: center;
+
+    .btn-register{
+      width: 200px;
+      padding: 0.6rem;
+    }
+  }
+  .container-icons{
+    .box-icons-social{
+      a{
+        margin-right: 10px;
+      }
+      
+    }
+  }
+    
+  .container-icons{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-top: 0.8rem;
+
+    .box-icons-social{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  footer {
+    .attribution{
+      margin-top: 1rem;
+     font-size: 0.8rem;
+      
+    }
+  }
+
+}
+
+

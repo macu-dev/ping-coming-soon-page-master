@@ -1,0 +1,39 @@
+.container{
+  width:$size-100;
+  height:$size-100;
+  display:grid;
+  grid-template-columns: 5% 1.3fr 1fr;
+  grid-template-rows: 170px 1fr repeat(3,1fr);
+  grid-template-areas:"espacio navigation navigation "
+                      "espacio contenido1  contenido2"
+                      "espacio     button      button  "
+                      "espacio    icon-social  icon-social" 
+                      "espacio     footer      footer  " ;
+
+
+  .navbar-huddle{
+    @include grid-row-column(navigation);
+  }
+
+ .container-content-img{
+    @include grid-row-column(contenido1);
+  }
+
+ .container-content-text{
+    @include grid-row-column(contenido2);
+  }
+
+ .btn-box{
+    @include grid-row-column(button);
+  } 
+
+  .container-icons{
+    @include grid-row-column(icon-social);
+  }
+
+  footer{
+    @include grid-row-column(footer);
+  }
+
+}
+

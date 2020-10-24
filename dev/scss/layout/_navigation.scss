@@ -1,0 +1,50 @@
+.navbar-huddle{
+  width: $size-100;
+  display: flex;
+  align-items: center;
+
+  .navbar-brand-huddle{
+    width: $size-50;
+  }
+}
+
+
+
+// .navigation-netflix{
+//   background-color: $color-nav-netflix;
+//   width: $sidebar-width;
+//   display: flex;
+//   flex-direction: column;
+//   height: 100vh;
+//   position: fixed;
+//   justify-content: space-evenly;
+//   .navigation-items{
+//     width: $size-100;
+//     height: $size-50;
+//     display: flex;
+//     flex-direction: inherit;
+//     justify-content:center;
+//     align-items: center;
+
+//     .item{
+//       width: $size-100;
+//       height: $size-50;
+//       display: inherit;
+//       justify-content: inherit;
+//       align-items: inherit;
+
+//       &:hover{
+//         cursor: pointer;
+//       }
+
+//     }
+//   }
+// }
+
+// .item-active{
+//   margin-left: -3px;
+//   width: $size-100;
+//   border-left: 3px solid $color-active-btn-netflix;
+//   cursor: pointer;
+// }
+
