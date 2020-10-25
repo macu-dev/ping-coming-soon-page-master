@@ -1,10 +1,12 @@
-.navbar-huddle{
+.navbar_ping{
   width: $size-100;
   display: flex;
   align-items: center;
 
-  .navbar-brand-huddle{
-    width: $size-50;
+  .navbar_brand_ping{
+    width: $size-100;
+    display:flex;
+    justify-content:center;
   }
 }
 
