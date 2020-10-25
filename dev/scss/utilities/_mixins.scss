@@ -3,16 +3,6 @@
   grid-row:$column-row/$column-row;
 }
 
-@mixin bg($img-url, $size, $position ){
-  background: {
-    image: $img-url;
-    size:$size;
-    position:$position;
-    repeat: no-repeat;
-  }
-
-}
-
 @mixin font($font-fam, $size, $color){
 
   @if($size == ''){
@@ -57,3 +47,12 @@
     @content;
   }
 }
+
+@mixin customInput($width, $border-color, $border-size, $border-radius, $padding ) {
+  width: $width;
+  padding: $padding;
+  border-radius: $border-radius;
+  border: none;
+  border: $border-size solid $border-color;
+}
+

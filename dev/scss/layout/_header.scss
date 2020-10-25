@@ -1,31 +1,38 @@
 .header_ping{
   width: $size-100;
   height: $size-100;
-  padding-top:3rem;
+  padding-top:$size-2rem + $size-2rem;
   display: flex;
   flex-wrap:wrap;
   justify-content:center;
 
-  .box_title{
-    width:$size-100;
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    .title_ping, .subtitle_ping{
-      width: $size-100;
-      text-align:center;
-    }
-    .title_ping{
-      @include font ($font-libre-franklin, 2.5rem, $color-gray );
-      font-weight:300;
+}
 
-      span {
-        color:$color-black;
-        font-weight: $font-weight-bold;
-      }
-    }
-  
+.box_title{
+  width:$size-100;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  .title_ping, .subtile_ping{
+    width: $size-100;
+    text-align:center;
   }
+  .title_ping{
+    @include font ($font-libre-franklin, $size-2rem + 1rem, $color-gray );
+    font-weight:300;
+
+    span {
+      color:$color-black;
+      font-weight: $font-weight-bold;
+    }
+  }
+
+  .subtile_ping{
+    @include font ($font-libre-franklin, 1.3rem, $color-black );
+    font-weight: 100 !important;
+  }
+
+}
 
   .box_img{
     width: $size-100;
@@ -66,5 +73,5 @@
   //   }
   // }
   
-}
+
 
