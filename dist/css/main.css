@@ -186,3 +186,7 @@ form .form-group-submit #submit {
   background-color: #4f7df3;
   color: white;
 }
+
+footer .attribution {
+  color: white;
+}

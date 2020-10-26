@@ -4,8 +4,8 @@ const sass = require('gulp-sass');
 const del = require('del');
 const path = require('path');
 const { src , dest, watch, series } = require('gulp');
-const SCSS_SRC = path.join(__dirname,'./dev/scss/**/*.scss');
-const SCSS_DEST = path.join(__dirname,'./dist/css/');
+const SCSS_SRC = path.join(__dirname,'dev/scss/**/*.scss');
+const SCSS_DEST = path.join(__dirname,'dist/css/');
 sass.compiler = require('node-sass');
 
 const refresh = require('gulp-livereload'),
