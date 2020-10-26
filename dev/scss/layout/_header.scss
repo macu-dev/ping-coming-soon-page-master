@@ -49,29 +49,14 @@
     }
   }
 
-  p{
+  .container-icons + p{
+    margin-top: 2rem;
     width:$size-100;
+    color: $color-gray;
+    font-size: 0.9rem;
     text-align:center;
   }
 
-  // .container-content-text{
-  //   width: $size-100;
-  //   padding: 10% 10% 0 10%;
-   
-  //   .text-title{
-  //     @include font ($font-poppin-regular, 1.28rem , $color-white);
-  //     text-transform: capitalize;
-  //     text-align: left;
-  //     width: $size-100;
-  //     align-self: center;
-  //     margin-top: 1rem;
-  //   }
-
-  //   .parraf{
-  //     @include font ($font-open-sans, 1rem , $color-white);
-  //     margin-top: 1rem;
-  //   }
-  // }
   
 
 

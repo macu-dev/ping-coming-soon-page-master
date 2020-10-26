@@ -90,8 +90,11 @@ body {
   object-fit: contain;
 }
 
-p {
+.container-icons + p {
+  margin-top: 2rem;
   width: 100%;
+  color: #969696;
+  font-size: 0.9rem;
   text-align: center;
 }
 
@@ -151,6 +154,11 @@ form .form-group-submit #submit {
   text-align: center;
   font-weight: bold;
   color: white;
+  box-shadow: 0 7px 10px #c2d3ff;
+}
+
+form .form-group-submit #submit:hover {
+  cursor: pointer;
 }
 
 .container-icons {

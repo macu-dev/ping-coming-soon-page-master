@@ -32,6 +32,11 @@ form{
       text-align: center;
       font-weight: $font-weight-bold;
       color: $color-white;
+      box-shadow: 0 7px 10px $color-pale-blue;
+
+      &:hover{
+        cursor:pointer;
+      }
     }
   }
 
