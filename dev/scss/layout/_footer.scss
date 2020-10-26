@@ -1,5 +1,8 @@
 footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   .attribution{
-    color: $color-white;
+    color: $color-gray;
   }
 }
