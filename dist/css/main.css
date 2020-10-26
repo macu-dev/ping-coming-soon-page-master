@@ -20,9 +20,9 @@ body {
   width: 100%;
   height: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, auto);
-  grid-template-areas: "header header header" "footer footer footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 700px auto;
+  grid-template-areas: "header header header" "header header header" "footer footer footer";
 }
 
 .container .header_ping {
@@ -138,10 +138,15 @@ form .form-group-email #email::placeholder {
   font-weight: 100;
 }
 
+form .form-group-email #email:focus {
+  outline: none;
+}
+
 form .form-group-submit {
   display: inherit;
   justify-content: center;
   width: 30%;
+  height: 51px;
 }
 
 form .form-group-submit #submit {
@@ -151,6 +156,7 @@ form .form-group-submit #submit {
   border: none;
   border: 1px solid transparent;
   background-color: #4f7df3;
+  height: 100%;
   text-align: center;
   font-weight: bold;
   color: white;
@@ -159,6 +165,18 @@ form .form-group-submit #submit {
 
 form .form-group-submit #submit:hover {
   cursor: pointer;
+  background-color: #c2d3ff;
+}
+
+.error {
+  border: 1px solid #ff5263 !important;
+}
+
+.message-error {
+  font-size: 0.8rem;
+  padding-left: 20px;
+  font-style: italic;
+  color: #ff5263;
 }
 
 .container-icons {
@@ -203,4 +221,56 @@ footer {
 
 footer .attribution {
   color: #969696;
+}
+
+@media (max-width: 992px) {
+  .container {
+    padding-right: 25px;
+    padding-left: 25px;
+    grid-template-rows: auto auto 50px;
+    grid-template-areas: "header header header" "header header header" "footer footer footer";
+  }
+  .box_title .title_ping {
+    font-size: 1.59rem;
+  }
+  .box_title .subtile_ping {
+    font-size: 0.98rem;
+  }
+  form {
+    width: 100%;
+  }
+  form .form-group-email, form .form-group-submit {
+    width: 100%;
+  }
+  form .form-group-email {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  form .form-group-email #email {
+    width: 100%;
+  }
+  form .form-group-submit #submit {
+    width: 100%;
+  }
+  .box_img img {
+    width: 100%;
+  }
+  .container-icons + p, footer {
+    font-size: 0.8rem;
+  }
+  footer {
+    align-items: flex-end;
+  }
+  .container-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .box-icons-social a {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 1px solid #c2d3ff;
+  }
 }
