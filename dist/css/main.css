@@ -72,7 +72,7 @@ body {
   font-family: "Libre Franklin";
   font-size: 1.3rem;
   color: black;
-  font-weight: 100 !important;
+  font-weight: 100;
 }
 
 .box_img {
@@ -117,9 +117,8 @@ form {
 }
 
 form .form-group-email {
-  width: 60%;
+  width: 50%;
   max-width: 100%;
-  margin-right: 20px;
 }
 
 form .form-group-email #email {
@@ -128,6 +127,24 @@ form .form-group-email #email {
   border-radius: 25px;
   border: none;
   border: 1px solid #969696;
+}
+
+form .form-group-submit {
+  display: inherit;
+  justify-content: center;
+  width: 30%;
+}
+
+form .form-group-submit #submit {
+  width: 80%;
+  padding: 17px 20px;
+  border-radius: 25px;
+  border: none;
+  border: 1px solid transparent;
+  background-color: #4f7df3;
+  text-align: center;
+  font-weight: bold;
+  color: white;
 }
 
 .container-icons {

@@ -7,12 +7,25 @@ form{
   align-content: center;
   
   .form-group-email{
-    width: $size-50 + 10%;
+    width: $size-50;
     max-width: $size-100;
-    margin-right: 20px;
+    // margin-right: 8px;
 
     #email{
       @include customInput($size-100, $color-gray, 1px , 25px, 17px 25px );
+    }
+  }
+
+  .form-group-submit{
+    display: inherit;
+    justify-content: center;
+    width: $size-50 - 20%;
+    #submit{
+      @include customInput($size-50 + 30%, transparent, 1px , 25px , 17px 20px);
+      background-color:$color-blue;
+      text-align: center;
+      font-weight: $font-weight-bold;
+      color: $color-white;
     }
   }
 
