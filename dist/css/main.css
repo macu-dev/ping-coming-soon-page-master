@@ -129,6 +129,11 @@ form .form-group-email #email {
   border: 1px solid #969696;
 }
 
+form .form-group-email #email::placeholder {
+  color: #969696;
+  font-weight: 100;
+}
+
 form .form-group-submit {
   display: inherit;
   justify-content: center;

@@ -11,8 +11,14 @@ form{
     max-width: $size-100;
     // margin-right: 8px;
 
+    
     #email{
       @include customInput($size-100, $color-gray, 1px , 25px, 17px 25px );
+      
+    }
+    #email::placeholder{
+      color: $color-gray;
+      font-weight: 100;
     }
   }
 
