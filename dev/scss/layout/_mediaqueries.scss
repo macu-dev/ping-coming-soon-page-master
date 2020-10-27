@@ -23,6 +23,7 @@
   form {
 
     width: $size-100;
+    flex-wrap: wrap;
     .form-group-email, .form-group-submit{
       width: $size-100;
     }
@@ -34,6 +35,7 @@
       #email{
         width: $size-100;
       }
+      
     }
 
     .form-group-submit {

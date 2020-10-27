@@ -123,6 +123,7 @@ form {
 form .form-group-email {
   width: 50%;
   max-width: 100%;
+  flex-wrap: wrap;
 }
 
 form .form-group-email #email {
@@ -166,6 +167,10 @@ form .form-group-submit #submit {
 form .form-group-submit #submit:hover {
   cursor: pointer;
   background-color: #c2d3ff;
+}
+
+form .form-group-submit #submit:focus {
+  outline: none;
 }
 
 .error {
@@ -238,6 +243,7 @@ footer .attribution {
   }
   form {
     width: 100%;
+    flex-wrap: wrap;
   }
   form .form-group-email, form .form-group-submit {
     width: 100%;

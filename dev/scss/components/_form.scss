@@ -9,6 +9,7 @@ form{
   .form-group-email{
     width: $size-50;
     max-width: $size-100;
+    flex-wrap: wrap;
     // margin-right: 8px;
 
     
@@ -42,6 +43,10 @@ form{
       &:hover{
         cursor:pointer;
         background-color: $color-pale-blue;
+      }
+
+      &:focus{
+        outline: none;
       }
     }
   }
